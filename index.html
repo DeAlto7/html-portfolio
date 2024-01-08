@@ -1,0 +1,81 @@
+<!-- 
+  TODO: Create a motivational post website.
+Style it how ever you like. 
+Look at the goal image for inspiration.
+But it must have the following features:
+1. The main h1 text should be using the Regular Libre Baskerville Font from Google Fonts:
+  https://fonts.google.com/specimen/Libre+Baskerville
+2. The text should be white and background black.
+3. Add your own image into the images folder inside assets. It should have a 5px white border.
+4. The text should be center aligned.
+5. Create a div to contain the h1, p and img elements. Adjust the margins so that the image and text are centered on the page. 
+  Hint: You horizontally center a div by giving it a width of 50% and a margin-left of 25%.
+  Hint: Set the image to have a width of 100% so it fills the div. 
+6. Read about the text-transform property on MDN docs to make the h1 uppercase with CSS.
+  https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motivational Meme</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <img src="./assets/images/Arnold.jpg" alt="Arnold on stage with hands up" draggable="false"/>
+  <h1>Consistency</h1>
+  <h2>It's not what we do once in a while that shapes our lives. It's what we do consistently.</h2>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motivational Meme</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Array of motivational quotes
+        var quotes = [
+            "Believe you can and you're halfway there. -Theodore Roosevelt",
+            "The only way to do great work is to love what you do. -Steve Jobs",
+            "Don't watch the clock; do what it does. Keep going. -Sam Levenson",
+            "Your time is limited, don't waste it living someone else's life. -Steve Jobs",
+            "The only limit to our realization of tomorrow will be our doubts of today. -Franklin D. Roosevelt", 
+            "It's not what we do once in a while that shapes our lives. It's what we do consistently."
+        ];
+
+        // Function to display a random quote
+        function displayRandomQuote() {
+            // Get the h2 element
+            var quoteElement = document.getElementById('quote');
+
+            // Get a random index from the quotes array
+            var randomIndex = Math.floor(Math.random() * quotes.length);
+
+            // Set the inner text of the h2 element to the selected quote
+            quoteElement.innerText = quotes[randomIndex];
+        }
+
+        // Add an event listener to the button
+        var button = document.querySelector('button');
+        button.addEventListener('click', displayRandomQuote);
+    });
+  </script>
+</head>
+<body>
+  <img src="./assets/images/Arnold.jpg" alt="Arnold on stage with hands up" draggable="false"/>
+  <h1>Consistency</h1>
+  <h2 id="quote">It's not what we do once in a while that shapes our lives. It's what we do consistently.</h2>
+  <button>Push Me</button>
+</body>
+</html> -->
